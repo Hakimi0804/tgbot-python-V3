@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tgbot-python-v3"
+version = "0.1.0"
+description = "Personal Telegram Bot"
+authors = ["Firdaus Hakimi <hakimifirdaus944@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "tgbot_python_v3"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot = "^20.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
