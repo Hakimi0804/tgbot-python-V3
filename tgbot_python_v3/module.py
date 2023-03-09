@@ -10,7 +10,7 @@ class Module:
     disabled: bool = False
 
     def __init__(self) -> None:
-        self.log = logging.getLogger(self.__class__.name.replace(" ", "_"))
+        self.log = logging.getLogger(type(self).name.replace(" ", "_"))
 
     def register_help(self, cmd_name: str, cmd_desc: str) -> None:
         ...
